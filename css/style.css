@@ -3,11 +3,71 @@
 
 body {
     background: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family: Inter, 'Lexend Deca';
+    color: white;
+    margin: 0;
 }
 
-.container {
+.flex-container {
+    background: hsl(244, 38%, 16%);
+    margin: 16.67vh 23px;
+    border-radius: 10px;
+
     display: flex;
     flex-direction: column;
+}
+
+.right-div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background: hsl(277, 64%, 61%);
+}
+
+
+.desktop-img {
+    display: none;
+}
+
+.mobile-img {
+    margin-bottom: -5px;
+    width: 100%;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+
+    opacity: 0.68;
+}
+
+.left-div {
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+
+.nested-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nested-flex-container h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.nested-flex-container p {
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+    padding: 0 1em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.nested-flex-container h2 {
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.6);
 }
 
 @media (min-width: 600px) {
