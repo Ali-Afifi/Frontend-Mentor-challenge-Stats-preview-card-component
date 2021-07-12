@@ -92,6 +92,8 @@ body {
         border-bottom-right-radius: 10px;
         border-top-left-radius: 0;
         background: hsl(277, 64%, 61%);
+        
+        overflow: hidden;
     }
     
     .mobile-img {
@@ -100,8 +102,7 @@ body {
     
     .desktop-img {
         display: block;
-        /* height: 100%; */
-        object-fit: fill;
+        height: 100%;
 
         border-bottom-right-radius: 10px;
         border-top-right-radius: 10px;
